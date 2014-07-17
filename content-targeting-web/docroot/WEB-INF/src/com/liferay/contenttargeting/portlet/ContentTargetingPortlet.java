@@ -266,7 +266,7 @@ public class ContentTargetingPortlet extends CTFreeMarkerPortlet {
 			LocalizationUtil.getLocalizationMap(request, "description");
 
 		ServiceContext serviceContext = ServiceContextFactory.getInstance(
-			UserSegment.class.getName(), request);
+			request);
 
 		ThemeDisplay themeDisplay = (ThemeDisplay)request.getAttribute(
 			WebKeys.THEME_DISPLAY);
@@ -674,7 +674,7 @@ public class ContentTargetingPortlet extends CTFreeMarkerPortlet {
 		}
 
 		ServiceContext serviceContext = ServiceContextFactory.getInstance(
-			RuleInstance.class.getName(), request);
+			request);
 
 		ThemeDisplay themeDisplay = (ThemeDisplay)request.getAttribute(
 			WebKeys.THEME_DISPLAY);
