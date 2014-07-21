@@ -27,9 +27,10 @@ Import-Package:\
 	javax.naming,\
 	javax.naming.directory,\
 	*;resolution:="optional"
-Include-Resource: classes,\
-	{WEB-INF/liferay-hook.xml=docroot/WEB-INF/liferay-hook.xml},\
-	{WEB-INF/web.xml=docroot/WEB-INF/web.xml},\
+Include-Resource:\
+ 	docroot/WEB-INF/classes,\
+	WEB-INF/liferay-hook.xml=docroot/WEB-INF/liferay-hook.xml,\
+	WEB-INF/web.xml=docroot/WEB-INF/web.xml,\
 	WEB-INF/lib/util-java.jar=${app.server.portal.dir}/WEB-INF/lib/util-java.jar
 Private-Package: \
 	com.liferay.contenttargeting.rules.ipgeocode.*
