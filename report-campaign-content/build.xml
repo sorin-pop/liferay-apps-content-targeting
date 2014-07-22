@@ -9,7 +9,7 @@
 
 	<property name="import.shared" value="analytics-api,anonymous-users-api,content-targeting-api" />
 
-	<property name="service.base.dir" value="." />
+	<property name="service.input.file" value="service.xml" />
 
 	<import file="../../../build-common-osgi-plugin.xml" />
 </project>
