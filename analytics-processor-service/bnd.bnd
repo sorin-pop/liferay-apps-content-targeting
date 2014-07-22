@@ -17,12 +17,12 @@ Import-Package:\
 	javax.servlet,\
 	javax.servlet.http,\
 	*;resolution:="optional"
-Include-Resource: classes,\
-	{WEB-INF/classes/META-INF=classes/META-INF/},\
-	{WEB-INF/web.xml=docroot/WEB-INF/web.xml},\
+Include-Resource:\
+ 	docroot/WEB-INF/classes,\
+	WEB-INF/classes/META-INF=docroot/WEB-INF/classes/META-INF/,\
+	WEB-INF/web.xml=docroot/WEB-INF/web.xml,\
 	WEB-INF/lib/util-java.jar=${app.server.portal.dir}/WEB-INF/lib/util-java.jar
 Private-Package: \
 	com.liferay.analyticsprocessor.*
-Service-Component: \
-	com.liferay.analyticsprocessor.*
+Service-Component: com.liferay.analyticsprocessor.*
 Web-ContextPath: /analytics-processor
